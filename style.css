@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: 200ms;
+}
+
+/* BODY */
+body {
+    background: #eaf3ff; /* biru soft */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* JUDUL */
+h2 {
+    margin-bottom: 15px;
+    color: #034f84;
+    font-size: 24px;
+}
+
+/* TOMBOL TAMBAH */
+#tambahdata {
+    background: #0275d8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+#tambahdata:hover {
+    background: #025aa5;
+}
+
+/* FORM CARI */
+form input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #aac5e2;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 8px 12px;
+    background: #0275d8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+form button:hover {
+    background: #025aa5;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #0275d8;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dfe7f3;
+}
+
+tr:hover {
+    background: #f0f6ff;
+}
+
+/* LINK EDIT HAPUS */
+a {
+    color: #0275d8;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* FORM TAMBAH DATA */
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #aac5e2;
+    border-radius: 6px;
+    outline: none;
+}
+
+form textarea {
+    height: 80px;
+}
+
+button[type="submit"], button[name="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #0275d8;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background: #025aa5;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    form input {
+        width: 100%;
+    }
+}
